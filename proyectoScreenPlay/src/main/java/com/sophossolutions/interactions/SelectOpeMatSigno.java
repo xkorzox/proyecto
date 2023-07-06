@@ -33,6 +33,8 @@ public class SelectOpeMatSigno implements Interaction{
 	
 		boolean isCurrentlyVisible3 = actor.asksFor(CurrentVisibility.of(txtOpeMatSigno));
 		if (isCurrentlyVisible3 == true) {
+			
+			System.out.println(11+"ddd");
 
 			System.out.println(TextOf.field(txtOpeMatSigno).answeredBy(actor));
 

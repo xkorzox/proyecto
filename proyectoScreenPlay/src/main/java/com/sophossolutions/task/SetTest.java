@@ -161,11 +161,12 @@ public class SetTest implements Task {
 			boolean isCurrentlyVisible2 = actor.asksFor(CurrentVisibility.of(txtOperacionMat));
 			if (isCurrentlyVisible2 == true) {
 
+				System.out.println(11+"ddd");
 				String formula = TextOf.field(txtOperacionMat).answeredBy(actor);
 
 				Expression e = new ExpressionBuilder(formula).build();
 
-				int result = Double.valueOf(e.evaluate()).intValue();
+				long result = Double.valueOf(e.evaluate()).longValue();
 
 				System.out.println(result);
 
@@ -175,21 +176,24 @@ public class SetTest implements Task {
 //		______________________________________________________________________
 			boolean isCurrentlyVisible3 = actor.asksFor(CurrentVisibility.of(txtOpeMatSigno));
 			if (isCurrentlyVisible3 == true) {
+				System.out.println(22+"ddd");
 
 				System.out.println(TextOf.field(txtOpeMatSigno).answeredBy(actor));
 
 				String strOperacion = TextOf.field(txtOpeMatSigno).answeredBy(actor);
 
 				String strOper = strOperacion.substring(0, strOperacion.length() - 2);
+				
+				System.out.println(strOper);
 
 				Expression e1 = new ExpressionBuilder(strOper).build();
 
-				int strOperacion1 = Double.valueOf(e1.evaluate()).intValue();
+				long strOperacion1 = Double.valueOf(e1.evaluate()).longValue();
 
 				System.out.println(strOperacion);
 
 				System.out.println(strOperacion1);
-
+				
 				actor.attemptsTo(Click.on(txtResultado.of(strOperacion1 + "")));
 
 			}
