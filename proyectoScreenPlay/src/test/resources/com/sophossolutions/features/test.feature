@@ -23,5 +23,5 @@ Feature: Title of your feature
   @tag1
   Scenario: Loguarse en Test
     Given Debe ingresar en la pagina de newTours "Test"
-    When Ingresar credenciales "639149" y "10df2f32286b7120MS00LTk0MTkzNg==30e0c83e6c29f1c3"
+    When Ingresar credenciales "592179" y "10df2f32286b7120Mi00LTk3MTI5NQ==30e0c83e6c29f1c3"
     Then Validar mensaje del home de la pagina

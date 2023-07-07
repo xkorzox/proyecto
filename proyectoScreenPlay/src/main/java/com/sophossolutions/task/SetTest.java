@@ -93,7 +93,7 @@ public class SetTest implements Task {
 		actor.attemptsTo(Enter.theValue(strUser).into(txtUser), Enter.theValue(strPassword).into(txtPassword),
 				Click.on(btnInput));
 
-		for (int j = 0; j < 11; j++) {
+		for (int j = 0; j < 10; j++) {
 			
 			boolean isCurrentlyVisible7 = actor.asksFor(CurrentVisibility.of(txtCalMultiplo));
 			if (isCurrentlyVisible7 == true) {
@@ -143,7 +143,7 @@ public class SetTest implements Task {
 				}
 				System.out.println(intNum1);
 
-				String reg2 = "'([a-zA-Z0-9])'";
+				String reg2 = "\\\"([a-zA-Z0-9])\\\"";
 				pattern1 = Pattern.compile(reg2);
 				matcher1 = pattern1.matcher(strLetras);
 
@@ -299,8 +299,6 @@ public class SetTest implements Task {
 				
 			}
 			actor.attemptsTo( Click.on(btnEnviar));
-			
-			
 		}
 
 		
