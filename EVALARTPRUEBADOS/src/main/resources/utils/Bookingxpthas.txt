@@ -1,0 +1,43 @@
+-----FIRSTSCENARIO-------------------------
+//*[@id=':Ra9:']: DESTINO_TEXT_FIELD send: Estocol
+//*[text()='Estocolmo'] DESTINO_OPTION
+//*[@data-testid='searchbox-dates-container'] FECHA_IN_OUT_TEXT_FIELD
+(//*[@class='b6dc9a9e69 e6c50852bd'])[3] NEXT_MONTH_BUTTON
+//*[@data-date='2023-04-26'] FECHA_IN_OPTION
+//*[@data-date='2023-05-03']FECHA_OUT_OPTION
+//*[@data-testid='occupancy-config'] OCUPANCY_SELECT
+(//*[@class='fc63351294 a822bdf511 e3c025e003 fa565176a8 f7db01295e c334e6f658 e1b7cfea84 d64a4ea64d'])[1] ADD ADULT :click 3
+(//*[@class='fc63351294 a822bdf511 e3c025e003 fa565176a8 f7db01295e c334e6f658 e1b7cfea84 d64a4ea64d'])[2] ADD KID :click 2
+(//*[@name='age'])[1] KID_ONE_AGE_SELECT value[2]
+(//*[@name='age'])[2] KID_TWO_AGE_SELECT value[4]
+(//*[@class='fc63351294 a822bdf511 e3c025e003 fa565176a8 f7db01295e c334e6f658 e1b7cfea84 d64a4ea64d'])[3] ADD ROOM:click 2
+//*[@class='fc63351294 a822bdf511 e2b4ffd73d f7db01295e c938084447 a9a04704ee d285d0ebe9'] LISTO_BUTTON
+//*[@type='submit'] BUSCAR_BUTTON
+------------------------------------------------SEARCH RESULT-----------------------------------------------------
+(//*[@class='bbdb949247'])[46] APPLY_FILTER_FANTASTICO
+//*[@class='b5cd09854e d10a6220b4'] GET FANTASTIC RESULTS FANTASTIC_RESUL > 9
+//*[@class='d8eab2cf7f c90c0a70d3 db63693c62'] GET COMMENTS CANTIDAD COMENTARIOS > 10
+//*[@data-testid='price-and-discounted-price'] GETSEARCH-PRICES
+//*[@data-testid='availability-cta-btn'] GET VER DISPONIBILIDAD
+
+---------SECOND SCENARIO-----------------
+//*[@id=':Ra9:']: DESTINO_TEXT_FIELD send: Lisb
+//*[text()='Lisboa'] DESTINO_OPTION
+//*[@data-testid='searchbox-dates-container'] FECHA_IN_OUT_TEXT_FIELD
+(//*[@class='b6dc9a9e69 e6c50852bd'])[3] NEXT_MONTH_BUTTON
+(//*[@class='b6dc9a9e69 e6c50852bd'])[3] NEXT_MONTH_BUTTON
+//*[@data-date='2023-05-31'] FECHA_IN_OPTION
+//*[@data-date='2023-06-07']FECHA_OUT_OPTION
+//*[@data-testid='occupancy-config'] OCUPANCY_SELECT
+(//*[@class='fc63351294 a822bdf511 e3c025e003 fa565176a8 f7db01295e c334e6f658 e1b7cfea84 d64a4ea64d'])[1] ADD ADULT :click 1
+(//*[@class='fc63351294 a822bdf511 e3c025e003 fa565176a8 f7db01295e c334e6f658 e1b7cfea84 d64a4ea64d'])[2] ADD KID :click 1
+//*[@name='age'] KID_AGE_SELECT values[5]:
+(//*[@class='fc63351294 a822bdf511 e3c025e003 fa565176a8 f7db01295e c334e6f658 e1b7cfea84 d64a4ea64d'])[3] ADD ROOM: click 1 
+//*[@class='fc63351294 a822bdf511 e2b4ffd73d f7db01295e c938084447 a9a04704ee d285d0ebe9'] LISTO_BUTTON
+//*[@type='submit'] BUSCAR_BUTTON
+------------------------------------------------SEARCH RESULT-----------------------------------------------------
+//*[@class='f9afbb0024'] GET CONFORTS INFO : CONFORT > 9
+//*[@data-testid='price-and-discounted-price'] GETSEARCH-PRICES
+//*[@data-testid='availability-cta-btn'] GET VER DISPONIBILIDA
+---------BOOKING PAGE----
+https://www.booking.com/
