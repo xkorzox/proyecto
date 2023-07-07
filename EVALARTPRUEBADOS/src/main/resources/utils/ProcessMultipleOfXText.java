@@ -27,7 +27,8 @@ public class ProcessMultipleOfXText implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-       String strTextToReplace="¿Cuáldetosnúmrstip?";
+    	
+    	System.out.println(99+"oo");       String strTextToReplace="¿Cuáldetosnúmrstip?";
       
        for (int i = 0; i < strTextToReplace.length(); i++) {
         strMultipleOfX = strMultipleOfX.replace(strTextToReplace.charAt(i)+"", "");
